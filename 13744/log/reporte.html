@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte Final</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reporte Final del Proyecto</h1>
+
+        <h2>Conclusiones</h2>
+        <p>Durante este trabajo pudimos aplicar conocimientos teóricos y prácticos sobre la computación en la nube. Logramos configurar correctamente una máquina virtual en Azure, instalar servicios y desplegar contenido web. El trabajo en equipo y la planificación fueron claves para completar las tareas sin errores significativos.</p>
+
+        <h2>Resumen de Arquitectura</h2>
+        <p>Utilizamos una arquitectura simple basada en una VM Linux en Azure, configurada como servidor web mediante Apache. El contenido se desplegó desde un repositorio remoto, lo que permitió un flujo CI/CD básico. Esta arquitectura es escalable y fácil de mantener.</p>
+
+        
+        <h2>Seguridad Aplicada</h2>
+        <p>Durante la implementación, aplicamos varias prácticas de seguridad, tales como:</p>
+        <ul>
+            <li>Acceso restringido mediante el uso de Bastión de Azure, evitando puertos RDP o SSH abiertos públicamente.</li>
+            <li>Uso de grupos de seguridad de red (NSG) para controlar el tráfico entrante y saliente a la máquina virtual.</li>
+            <li>Conexión segura mediante HTTPS y protocolos cifrados al momento de trabajar con Git y la terminal.</li>
+            <li>Configuración mínima del sistema para evitar software innecesario que pueda representar vulnerabilidades.</li>
+            <li>Actualización de paquetes del sistema operativo antes de iniciar tareas de instalación.</li>
+        </ul>
+
+        <h2>Reflexión Final</h2>
+        <p>Este proyecto nos permitió comprender el ciclo completo del despliegue de una aplicación web en la nube, desde la creación de infraestructura hasta su visualización. A través de herramientas como Azure, Git y Apache, reforzamos habilidades clave en la carrera de Ingeniería Informática, incluyendo automatización, seguridad, administración de servidores y trabajo en equipo.</p>
+    </div>
+</body>
+</html>
